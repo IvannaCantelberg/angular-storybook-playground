@@ -1,5 +1,5 @@
 {
-  "name": "moderm-test-app",
+  "name": "app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "storybook": "ng run moderm-test-app:storybook",
-    "build-storybook": "ng run moderm-test-app:build-storybook"
+    "storybook": "ng run app:storybook",
+    "build-storybook": "ng run app:build-storybook"
   },
   "private": true,
   "dependencies": {
