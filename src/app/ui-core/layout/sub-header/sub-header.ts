@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { LogoutButton } from '../../components/logout-button/logout-button';
 
 @Component({
   selector: 'app-sub-header',
   imports: [LogoutButton],
   templateUrl: './sub-header.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './sub-header.scss',
 })
 export class SubHeader {}
