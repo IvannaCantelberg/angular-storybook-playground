@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "moderm-test-app": {
+    "app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "moderm-test-app:build:production"
+              "buildTarget": "app:build:production"
             },
             "development": {
-              "buildTarget": "moderm-test-app:build:development"
+              "buildTarget": "app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
           "builder": "@analogjs/storybook-angular:build-storybook",
           "options": {
             "configDir": ".storybook",
-            "browserTarget": "moderm-test-app:build",
+            "browserTarget": "app:build",
             "compodoc": false,
             "outputDir": "storybook-static"
           }
