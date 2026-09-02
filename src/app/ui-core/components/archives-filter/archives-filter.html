@@ -1,0 +1,19 @@
+<mat-card class="example-card" appearance="outlined">
+	<mat-card-header>
+		<mat-card-title>Archives Filter</mat-card-title>
+	</mat-card-header>
+		<mat-card-content>
+			<mat-selection-list #shoes>
+			@for (shoe of typesOfShoes; track shoe) {
+				<mat-list-option>{{shoe.name}}</mat-list-option>
+			}
+			</mat-selection-list>
+		</mat-card-content>
+		<mat-card-footer class="example-card-footer">
+		<!-- <mat-chip-set aria-label="Chihuahua traits">
+			@for (selected of shoes.selectedOptions.selected; track selected) {
+				<mat-chip>{{selected.value}}</mat-chip>
+			}
+		</mat-chip-set> -->
+	</mat-card-footer>
+</mat-card>
